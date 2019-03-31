@@ -23,3 +23,7 @@ h1,h2,h3,h4,h5,h6,p {
 body {
   background-color: rgb(42, 174, 184);
 }
+video {
+  display: block;
+  margin: auto;
+}
