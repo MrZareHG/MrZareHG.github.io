@@ -1,8 +1,9 @@
 img {
   width: 600px;
   height: 350px;
-  position: absolute;
-  left: 650px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 60px;
 }
 p {
