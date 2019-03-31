@@ -1,0 +1,16 @@
+img {
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  left: 650px;
+  border-radius: 60px;
+}
+p {
+  color: blue;
+  font-size: 43px;
+  text-align: center;
+}
+h1,h2,h3 {
+  color: red;
+  text-align: center;
+}
