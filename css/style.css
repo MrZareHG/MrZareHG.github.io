@@ -1,0 +1,17 @@
+body {
+  background-color: #9c9696;
+}
+main {
+  width: 70%;
+  background-color: #333131;
+  margin: auto;
+}
+nav {
+  background-color: #1f1f1f;
+}
+ul {
+
+}
+footer {
+  display: block;
+}
