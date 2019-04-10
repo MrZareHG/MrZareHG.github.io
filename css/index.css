@@ -1,0 +1,24 @@
+section {
+    width: 50%;
+}
+section.boost {
+    margin-right: auto;
+}
+h1,
+section h2 {
+    text-align: center;
+    font-family: "Comic Sans MS", Arial, serif;
+    color: #55c3de;
+}
+li,
+p {
+    color: #c8c8c8;
+    font-family: "Comic Sans MS",Arial, serif;
+}
+li {
+    list-style-type: none;
+}
+.site-news,
+.boost {
+    float: left;
+}
