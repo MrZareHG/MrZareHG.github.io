@@ -1,17 +1,92 @@
 body {
   background-color: #9c9696;
 }
+
+/*Начало меню*/
+header {
+  background-color: #1f1f1f;
+}
+
+nav img {
+  position: absolute;
+}
+
+.menu {
+  text-decoration: none;
+}
+
+.menu>li {
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.menu a {
+  display: block;
+  margin-left: -1px;
+  padding: 8px 10px;
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid #55c3de;
+}
+
+.menu a:hover {
+  background-color: #55c3de;
+  color: black;
+}
+
+.menu .submenu {
+  background-color: #373737;
+  position: absolute;
+  left: -1.5px;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  display: none;
+  font-size: 12px;
+}
+
+.menu .submenu a {
+  margin-bottom: -1px;
+  border-bottom: 1px solid #55c3de;
+}
+
+.menu>li:hover .submenu {
+  display: block;
+}
+
+/*Конец меню*/
+.content {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+section h2 {
+  text-align: center;
+  font-family: "Comic Sans MS", Arial, serif;
+  color: #55c3de;
+}
+
+li,
+p {
+  color: #c8c8c8;
+  font-family: "Comic Sans MS", Arial, serif;
+}
+
+li {
+  list-style: none;
+}
+
 main {
+  padding: 0;
+  margin: 0;
   width: 70%;
   background-color: #333131;
   margin: auto;
-}
-nav {
-  background-color: #1f1f1f;
-}
-ul {
-
-}
-footer {
-  display: block;
+  display: flex;
 }

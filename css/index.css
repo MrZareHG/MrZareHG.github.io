@@ -1,24 +1,48 @@
-section {
-    width: 50%;
+.content {
+  width: 50%;
+  background-color: blue;
 }
+
+img {
+  width: 100%;
+}
+
 section.boost {
-    margin-right: auto;
+  margin-right: auto;
 }
+
 h1,
 section h2 {
-    text-align: center;
-    font-family: "Comic Sans MS", Arial, serif;
-    color: #55c3de;
+  text-align: center;
+  font-family: "Comic Sans MS", Arial, serif;
+  color: #55c3de;
 }
+
 li,
 p {
-    color: #c8c8c8;
-    font-family: "Comic Sans MS",Arial, serif;
+  color: #c8c8c8;
+  font-family: "Comic Sans MS", Arial, serif;
 }
+
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
-.site-news,
-.boost {
-    float: left;
+
+body {
+  background-color: #9c9696;
+}
+
+main {
+  width: 70%;
+  background-color: #333131;
+  margin: auto;
+  display: flex;
+}
+
+nav {
+  background-color: #1f1f1f;
+}
+
+footer {
+  display: block;
 }

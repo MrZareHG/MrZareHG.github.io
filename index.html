@@ -3,27 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>ESO Guide</title>
-    <link type="text/css" rel="stylesheet" href="css.css">
+    <link  rel="stylesheet" href="css/style.css">
+    <link  rel="stylesheet" href="css/inex.css">
   </head>
   <body>
   <header>
       <nav>
-          <ul>
-              <li><a href="#"><img src="img/logo" alt="Логотип"></a></li>
+          <a href="#"><img src="img/logo" alt="Логотип"></a>
+          <ul class="menu">
               <li><a href="#">Главная</a></li>
-              <li><a href="#">Билды</a></li>
-              <li><a href="#">Советы</a></li>
+              <li>
+                <a href="#">Билды</a>
+                <ul class="submenu submenu-bilds">
+                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для стамина нб</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для мана сорка</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для ДК танка</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Советы</a>
+                <ul class="submenu submenu-bilds">
+                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по фарму опыта</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по фарму золота</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по набору очков способностей</a></li>
+                </ul>
+              </li>
               <li><a href="#">О нас</a></li>
           </ul>
       </nav>
   </header>
     <main>
-        <article class="slide">
-
-        </article>
-        <article class="site-news">
-          <h2>Новости сайта</h2>
-          <ul>
+      <div class="content">
+        <section class="slide">
+          <img src="img/news.jpg" alt="Новость">
+        </section>
+          <section class="site-news">
+            <h2>Новости сайта</h2>
+            <ul>
               <li>Добавлен билд для стамина нб</li>
               <li>Добавлен билд для мана сорка</li>
               <li>Добавлен билд для ДК танка</li>
@@ -31,18 +47,19 @@
               <li>Добавлен совет по фарму золота</li>
               <li>Добавлен совет по набору очков способностей</li>
               <li>Сайт запустился</li>
-          </ul>
-        </article>
-        <article class="boost">
-          <h2>Заказ прокачки</h2>
-          <ul>
-            <li>Прокачка до 50 уровня:  Молоко с печеньками</li>
-            <li>Прокачка до 100 ЧП:  Фура печенек и камаз молока</li>
-            <li>Прокачка до 160 ЧП:  100к биткоинов</li>
-            <li>Фарм голды: 1к за 2 почки</li>
-            <li>Продажа голды: 1к за почку</li>
-          </ul>
-        </article>
+            </ul>
+          </section>
+        </div>
+          <section class="boost content">
+            <h2>Заказ прокачки</h2>
+            <ul>
+              <li>Прокачка до 50 уровня: Молоко с печеньками</li>
+              <li>Прокачка до 100 ЧП: Фура печенек и камаз молока</li>
+              <li>Прокачка до 160 ЧП: 100к биткоинов</li>
+              <li>Фарм голды: 1к за 2 почки</li>
+              <li>Продажа голды: 1к за почку</li>
+            </ul>
+          </section>
     </main>
   <footer>
       <div class="social">
