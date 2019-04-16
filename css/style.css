@@ -1,37 +1,76 @@
 body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
   background-color: #9c9696;
+}
+
+img {
+  width: 100%;
 }
 
 /*Начало меню*/
 header {
   background-color: #1f1f1f;
+  margin-bottom: 15px;
 }
 
-nav img {
-  position: absolute;
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding-left: 300px;
+}
+
+.inner-page .main-navigation {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.main-header-logo {
+  order: 2;
+  width: 38px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
 .menu {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
 }
 
 .menu>li {
   position: relative;
-  left: 50%;
   display: inline-block;
   margin-right: -4px;
 }
 
 .menu a {
   display: block;
-  margin-left: -1px;
-  padding: 8px 10px;
+  margin-left: 3px;
+  padding: 25px 20px;
   color: white;
   text-decoration: none;
   border-right: 1px solid #55c3de;
+  border-left: 1px solid #55c3de;
+  vertical-align: middle;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a:focus {
   background-color: #55c3de;
   color: black;
 }
@@ -39,17 +78,18 @@ nav img {
 .menu .submenu {
   background-color: #373737;
   position: absolute;
-  left: -1.5px;
   margin: 0;
   padding: 0;
   width: 300px;
   display: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .menu .submenu a {
+  margin: 0;
   margin-bottom: -1px;
   border-bottom: 1px solid #55c3de;
+  padding-left: 5px;
 }
 
 .menu>li:hover .submenu {
@@ -59,10 +99,6 @@ nav img {
 /*Конец меню*/
 .content {
   width: 50%;
-}
-
-img {
-  width: 100%;
 }
 
 h1,
@@ -89,4 +125,5 @@ main {
   background-color: #333131;
   margin: auto;
   display: flex;
+  align-items: flex-start;
 }
