@@ -148,6 +148,11 @@ h3 {
   font-family: "Comic Sans MS", Arial, serif;
   color: #55c3de;
 }
+.name-site {
+  font-size: 50px;
+  font-style: italic;
+  margin-bottom: 0;
+}
 
 main {
   padding: 0;
@@ -155,6 +160,8 @@ main {
   width: 70%;
   background-color: #333131;
   margin: auto;
+}
+.main {
   display: flex;
   align-items: flex-start;
 }
