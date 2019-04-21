@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>ESO Guide</title>
-    <link  rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquary.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
   <header>
       <nav class="main-navigation">
-          <a href="index.html" class="main-header-logo"><img width="111" height="50" src="img/logo.png" alt=""></a>
+          <a href="index.html" class="main-header-logo"><img src="img/logo.png" alt=""></a>
           <ul class="menu">
               <li>
                 <a href="build-home.html">Билды</a>
                 <ul class="submenu submenu-bilds">
-                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для стамина нб</a></li>
-                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для мана сорка</a></li>
-                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для ДК танка</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Билд для стамина нб</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Билд для мана сорка</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Билд для ДК танка</a></li>
                 </ul>
               </li>
               <li>
                 <a href="advice-home.html">Советы</a>
                 <ul class="submenu submenu-bilds">
-                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по фарму опыта</a></li>
-                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по фарму золота</a></li>
-                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по набору очков способностей</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Совет по фарму опыта</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Совет по фарму золота</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Совет по набору очков способностей</a></li>
                 </ul>
               </li>
               <li><a href="aboutus.html">О нас</a></li>
@@ -36,9 +37,39 @@
 
       <div class="main">
         <div class="content">
-          <section class="news-slide">
-            <a href="#"><img src="img/news.jpg" alt=""></a>
-          </section>
+          <h2>Новости из игры</h2>
+          <div class="container-fluid">
+              <div class="row-fluid">
+                  <div class="span12">
+                      <div class="carousel slide" id="myCarousel">
+                          <div class="carousel-inner">
+                              <div class="item active">
+                                  <div class="bannerImage">
+                                      <a class="slide-link" href="https://www.elderscrollsonline.com/en-us/news/post/56049"><img src="img/news.jpg" alt=""></a>
+                                  </div>
+                                  <p class="news-description">Twitch drops - Апрель 2019!</p>
+                              </div>
+                              <div class="item">
+                                  <div class="bannerImage">
+                                      <a class="slide-link" href="https://www.elderscrollsonline.com/en-us/news/post/56099"><img src="img/news-2.jpg" alt=""></a>
+                                  </div>
+                                  <p class="news-description">Эльсвейр уже на PTS серверах!</p>
+                              </div>
+                              <div class="item">
+                                  <div class="bannerImage">
+                                      <a class="slide-link" href="https://www.elderscrollsonline.com/en-us/news/post/56119"><img src="img/news-3.jpg" alt=""></a>
+                                  </div>
+                                  <p class="news-description">Скидка на кронные наборы в апреле!</p>
+                              </div>
+                          </div>
+                          <div class="control-box">
+                              <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+                              <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+                          </div><!-- /.control-box -->
+                      </div><!-- /#myCarousel -->
+                  </div><!-- /.span12 -->
+              </div><!-- /.row -->
+          </div><!-- /.container -->
           <section class="site-news">
             <h2>Новости сайта</h2>
             <ul>
@@ -86,6 +117,8 @@
       </div>
     </footer>
   </div>
-  <script  src="slide/js/index.js"></script>
+  <script src='js/jquery.js'></script>
+  <script src='js/boostrap.js'></script>
+  <script  src="js/index.js"></script>
   </body>
 </html>

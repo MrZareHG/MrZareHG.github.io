@@ -1,3 +1,6 @@
+header {
+  height: 70px;
+}
 .build-item,
 .advice-item {
   display: inline-block;
@@ -23,4 +26,7 @@ main {
   -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
   border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
   border-image-slice: 1;
+}
+.menu a {
+  padding-bottom: 23px;
 }

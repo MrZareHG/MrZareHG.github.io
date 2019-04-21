@@ -9,6 +9,7 @@ body {
   padding: 0;
   background-color: #9c9696;
   height: 100%;
+  font-size: 16px;
 }
 
 .wrapper {
@@ -59,7 +60,7 @@ header {
   order: 2;                    /* Порядок элементов в flex-box'ах */
   width: 38px;
   height: 100px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .inner-page .main-header-logo {
@@ -75,12 +76,12 @@ header {
   padding: 0;
   display: flex;
   flex-wrap: wrap;             /*Разрешён перенос блоков*/
+  z-index: 5;
 }
 
 .menu>li {
   position: relative;
   display: inline-block;
-  margin-right: -4px;
 }
 
 .menu>li>a {
@@ -112,6 +113,7 @@ header {
   width: 300px;
   display: none;
   font-size: 14px;
+  margin-left: 3px;
 }
 
 .menu .submenu a {
@@ -124,7 +126,10 @@ header {
 .menu>li:hover .submenu {
   display: block;
 }
-
+.menu>li:nth-child(3),
+.menu>li:nth-child(2) {
+  margin-left: -4px;
+}
 /*Конец меню*/
 /* Контент начало*/
 main {
@@ -134,12 +139,49 @@ main {
 .content {
   width: 50%;
 }
-
-.news-slide {
+/* Начало слайдера */
+.container-fluid {
   width: 80%;
   margin-left: 5%;
   margin-top: 5%;
 }
+.container-fluid {
+  word-break: break-all;
+  max-width: 1000px;
+}
+.slide-link,
+.carousel-control {
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+.slide-link:hover,
+.carousel-control:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=50);
+  /* IE7 */
+  opacity: 1;
+  text-decoration: none;
+}
+.carousel-control {
+  top: 50%;
+}
+.bannerImage img {
+  border-radius: 30px 30px 0 0;
+}
+.news-description {
+  z-index: 5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1f1f1f;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 0 0 30px 30px;
+}
+/* Конец слайдера */
 
 h1,
 section h2,
@@ -148,10 +190,17 @@ h3 {
   font-family: "Comic Sans MS", Arial, serif;
   color: #55c3de;
 }
+h2 {
+  text-align: center;
+  color: #55c3de;
+  z-index: 5;
+  font-family: "Comic Sans MS", Arial, serif;
+}
 .name-site {
   font-size: 50px;
   font-style: italic;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 main {
