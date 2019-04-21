@@ -1,0 +1,26 @@
+.build-item,
+.advice-item {
+  display: inline-block;
+  margin-left: 5%;
+}
+.name-build,
+.name-advice {
+  width: 100%;
+  margin-top: -5px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #191919;
+  color: #55c3de;
+}
+main {
+  display: block;
+}
+.img-item {
+  background: #eee;
+  border: 10px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
+}

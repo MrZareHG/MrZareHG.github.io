@@ -2,60 +2,80 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Советы</title>
+    <title>ESO Guide</title>
+    <link  rel="stylesheet" href="css/style.css">
+    <link  rel="stylesheet" href="css/home.css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#"><img src="img/logo" alt="Логотип"></a></li>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Билды</a></li>
-          <li><a href="#">Советы</a></li>
-          <li><a href="#">О нас</a></li>
-        </ul>
+  <body class="inner-page">
+  <header>
+      <nav class="main-navigation">
+          <a href="index.html" class="main-header-logo"><img width="111" height="50" src="img/logo.png" alt=""></a>
+          <ul class="menu">
+              <li>
+                <a href="build-home.html">Билды</a>
+                <ul class="submenu submenu-bilds">
+                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для стамина нб</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для мана сорка</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Добавлен билд для ДК танка</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="advice-home.html">Советы</a>
+                <ul class="submenu submenu-bilds">
+                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по фарму опыта</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по фарму золота</a></li>
+                  <li class="submenu-bilds-list"><a href="#">Добавлен совет по набору очков способностей</a></li>
+                </ul>
+              </li>
+              <li><a href="aboutus.html">О нас</a></li>
+          </ul>
       </nav>
-    </header>
+  </header>
+  <div class="wrapper">
     <main>
-      <section class="advice">
-        <div class="advice-list advice-list-element">
-          <a href="">
-            <h2>Фарм опыта</h2>
-            <img src="img/advice 1" alt="">
-          </a>
-        </div>
-        <div class="advice-list advice-list-element">
-          <a href="">
-            <h2>Фарм золота</h2>
-            <img src="img/advice 2" alt="">
-          </a>
-        </div>
-        <div class="advice-list advice-list-element">
-          <a href="">
-            <h2>Набор очков способностей</h2>
-            <img src="img/advice 3" alt="">
-          </a>
-        </div>
-      </section>
+      <h1>Советы</h1>
+      <ul class="advice-list">
+        <li class="advice-item">
+          <a href="advice-xp">
+          <img class="img-item" src="img/advice-1.png" alt="">
+          <p class="name-advice">Фарм опыта</p>
+        </a>
+        </li>
+        <li class="advice-item">
+          <a href="advice-gold">
+          <img class="img-item" src="img/advice-2.png" alt="">
+          <p class="name-advice">Фарм золота</p>
+        </a>
+        </li>
+        <li class="advice-item">
+          <a href="advice-poin">
+          <img class="img-item" src="img/advice-3.png" alt="">
+          <p class="name-advice">Фарм очков способностей</p>
+        </a>
+        </li>
+      </ul>
     </main>
     <footer>
-      <div class="social">
-        <h3>Мы в соц. сетях</h3>
-        <img class="social-button" src="img/vk" alt="вк">
-        <img class="social-button" src="img/fb" alt="facebook">
+      <div class="footer-content social">
+          <h3>Мы в соц. сетях</h3>
+          <div class="social-container">
+            <a href="#">Мы в Вконтакте</a>
+            <a href="#">Мы в Facebook</a>
+          </div>
       </div>
-      <div class="footer-nav">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Билды</a></li>
-          <li><a href="#">Советы</a></li>
-          <li><a href="#">О нас</a></li>
-        </ul>
+      <div class="footer-content main-navigation footer-nav">
+          <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Билды</a></li>
+              <li><a href="#">Советы</a></li>
+              <li><a href="#">О нас</a></li>
+          </ul>
       </div>
-      <div class="other">
-        <h3>Почта для связи</h3>
-        <p>topsite@site.site</p>
+      <div class="footer-content other">
+          <h3>Почта для связи</h3>
+          <p class="email">topsite@site.site</p>
       </div>
     </footer>
+  </div
   </body>
 </html>
