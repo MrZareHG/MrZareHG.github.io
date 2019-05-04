@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>ESO Guide</title>
-    <link rel="stylesheet" href="css/jquary.css">
     <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/carousel.css">
   </head>
   <body class="inner-page">
   <header>
@@ -15,7 +15,7 @@
                 <a href="build-home.html">Билды</a>
                 <ul class="submenu submenu-bilds">
                   <li class="submenu-bilds-list"><a href="#">Билд для стамина нб</a></li>
-                  <li class="submenu-bilds-list"><a href="#">Билд для мана сорка</a></li>
+                  <li class="submenu-bilds-list"><a href="builds/sorc.html">Билд для мана сорка</a></li>
                   <li class="submenu-bilds-list"><a href="#">Билд для ДК танка</a></li>
                 </ul>
               </li>
@@ -33,43 +33,22 @@
   </header>
   <div class="wrapper">
     <main>
-      <h1 class="name-site">The Elder Scrolls Online Guide</h1>
+      <h1 class="name-page">The Elder Scrolls Online Guide</h1>
 
       <div class="main">
         <div class="content">
           <h2>Новости из игры</h2>
-          <div class="container-fluid">
-              <div class="row-fluid">
-                  <div class="span12">
-                      <div class="carousel slide" id="myCarousel">
-                          <div class="carousel-inner">
-                              <div class="item active">
-                                  <div class="bannerImage">
-                                      <a class="slide-link" href="https://www.elderscrollsonline.com/en-us/news/post/56049"><img src="img/news.jpg" alt=""></a>
-                                  </div>
-                                  <p class="news-description">Twitch drops - Апрель 2019!</p>
-                              </div>
-                              <div class="item">
-                                  <div class="bannerImage">
-                                      <a class="slide-link" href="https://www.elderscrollsonline.com/en-us/news/post/56099"><img src="img/news-2.jpg" alt=""></a>
-                                  </div>
-                                  <p class="news-description">Эльсвейр уже на PTS серверах!</p>
-                              </div>
-                              <div class="item">
-                                  <div class="bannerImage">
-                                      <a class="slide-link" href="https://www.elderscrollsonline.com/en-us/news/post/56119"><img src="img/news-3.jpg" alt=""></a>
-                                  </div>
-                                  <p class="news-description">Скидка на кронные наборы в апреле!</p>
-                              </div>
-                          </div>
-                          <div class="control-box">
-                              <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
-                              <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
-                          </div><!-- /.control-box -->
-                      </div><!-- /#myCarousel -->
-                  </div><!-- /.span12 -->
-              </div><!-- /.row -->
-          </div><!-- /.container -->
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                        <img src="../MrZareHG.github.io/img/news-3.jpg" id="lastClone" alt="">
+                        <img src="../MrZareHG.github.io/img/news.jpg" alt="">
+                        <img src="../MrZareHG.github.io/img/news-2.jpg" alt="">
+                        <img src="../MrZareHG.github.io/img/news-3.jpg" alt="">
+                        <img src="../MrZareHG.github.io/img/news.jpg" id="firstClone" alt="">
+                </div>
+            </div>
+            <button id="prevBtn">Prev</button>
+            <button id="nextBtn">Next</button>
           <section class="site-news">
             <h2>Новости сайта</h2>
             <ul>
@@ -92,8 +71,9 @@
               <li>Фарм голды: Молоко с печеньками</li>
               <li>Продажа голды: Молоко с печеньками</li>
             </ul>
-      </div>
           </section>
+      </div>
+
     </main>
     <footer>
       <div class="footer-content social">
@@ -117,8 +97,6 @@
       </div>
     </footer>
   </div>
-  <script src='js/jquery.js'></script>
-  <script src='js/boostrap.js'></script>
   <script  src="js/index.js"></script>
   </body>
 </html>

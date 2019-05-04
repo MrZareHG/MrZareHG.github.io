@@ -1,3 +1,4 @@
+
 /*Общее начало*/
 html {
   height: 100%
@@ -31,7 +32,8 @@ a {
 }
 
 li,
-p {
+p,
+td {
   color: #c8c8c8;
   font-family: "Comic Sans MS", Arial, serif;
 }
@@ -140,52 +142,13 @@ main {
   width: 50%;
 }
 /* Начало слайдера */
-.container-fluid {
-  width: 80%;
-  margin-left: 5%;
-  margin-top: 5%;
-}
-.container-fluid {
-  word-break: break-all;
-  max-width: 1000px;
-}
-.slide-link,
-.carousel-control {
-  -webkit-transition: all 150ms ease;
-  -moz-transition: all 150ms ease;
-  -ms-transition: all 150ms ease;
-  -o-transition: all 150ms ease;
-  transition: all 150ms ease;
-}
-.slide-link:hover,
-.carousel-control:hover {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  /* IE 8 */
-  filter: alpha(opacity=50);
-  /* IE7 */
-  opacity: 1;
-  text-decoration: none;
-}
-.carousel-control {
-  top: 50%;
-}
-.bannerImage img {
-  border-radius: 30px 30px 0 0;
-}
-.news-description {
-  z-index: 5;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #1f1f1f;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 0 0 30px 30px;
-}
+
 /* Конец слайдера */
 
 h1,
 section h2,
-h3 {
+h3,
+th {
   text-align: center;
   font-family: "Comic Sans MS", Arial, serif;
   color: #55c3de;
@@ -196,7 +159,7 @@ h2 {
   z-index: 5;
   font-family: "Comic Sans MS", Arial, serif;
 }
-.name-site {
+.name-page {
   font-size: 50px;
   font-style: italic;
   margin-top: 30px;
@@ -205,7 +168,6 @@ h2 {
 
 main {
   padding: 0;
-  margin: 0;
   width: 70%;
   background-color: #333131;
   margin: auto;

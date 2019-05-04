@@ -1,0 +1,67 @@
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.main {
+  display: block;
+}
+
+.ability-item,
+.armor-item {
+  width: 50%;
+}
+
+.ability-list>li>img {
+  width: 80%;
+  border: 2px solid #faff00;
+  border-radius: 15px;
+}
+
+.ability-list {
+  padding: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.ability-list>li {
+  display: inline-block;
+  margin-left: -10px;
+}
+.ability-list>li:last-child {
+  margin-left: 10px;
+}
+
+.ability-item>p,
+p.armor-item {
+  margin-left: 30px;
+}
+
+table {
+  border: 1px solid #55c3de;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+a {
+  color: #c8c8c8;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #55c3de;
+}
+
+td:hover,
+td:hover a {
+  background-color: #55c3de;
+  color: black;
+}
+
+th {
+  background-color: #55c3de;
+  color: black;
+  font-size: 14px;
+  padding: 20px;
+}
