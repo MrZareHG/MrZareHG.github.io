@@ -7,6 +7,7 @@
   overflow: hidden;
   border: 5px solid black;
   border-radius: 20px;
+  position: relative;
 }
 .carousel-slide {
   display: flex;
@@ -16,3 +17,31 @@
 .carousel-slide img {
   width: 100%;
  }
+#prevBtn {
+   position: absolute;
+   top: 50%;
+   z-index: 10;
+   left: 5%;
+   font-size: 40px;
+   color: #111111;
+   opacity: 0.8;
+   cursor: pointer;
+  transition: ease-in-out 0.5s;
+ }
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 40px;
+  color: #111111;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+#nextBtn:hover,
+#prevBtn:hover {
+  opacity: 1;
+  color: white;
+  transition: ease-in-out 0.5s;
+}
