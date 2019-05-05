@@ -244,6 +244,70 @@ footer {
   color: #55c3de;
 }
 
-.email {
+/*Связь, контакты */
+.contacts-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-container .box {
   text-align: center;
+}
+.contacts-container .box:nth-child(2) {
+  margin-right: 125px;
+}
+.contacts-container .box .icon .fas {
+  font-size: 40px;
+  cursor: pointer;
+}
+.contacts-container .box .icon h3,
+.contacts-container .box .icon h4 {
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  margin: 0;
+  padding: 2px 5px;
+  font-size: 14px;
+  transition-delay: 0.3333s;
+  color: transparent;
+  font-family: "Comic Sans MS", Arial, serif;
+}
+.contacts-container .box .fas:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+.contacts-container .box .fas:hover ~ h3 {
+  color: #c8c8c8;
+}
+.contacts-container .box .fas:hover ~ h4 {
+  color: #55c3de;
+}
+.contacts-container .box .icon {
+  font-weight: 600;
+  margin: 5px 0;
+}
+.contacts-container .box .icon h3:before,
+.contacts-container .box .icon h4:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #00bcd4;
+  transition: 1s;
+}
+.contacts-container .box .icon h4:before {
+  left: initial;
+  right: 100%;
+  background: #9c27b0;
+}
+.contacts-container .box .fas:hover ~ h3:before {
+  left: -100%;
+}
+.contacts-container .box .fas:hover ~ h4:before {
+  left: initial;
+  right: -100%;
 }
