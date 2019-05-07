@@ -6,32 +6,40 @@
     <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/carousel.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body class="inner-page">
+
   <header>
-      <nav class="main-navigation">
-          <a href="index.html" class="main-header-logo"><img src="img/logo.png" alt=""></a>
-          <ul class="menu">
+      <div class="wrap">
+      <a href="#" class="logo"><img src="../MrZareHG.github.io/img/logo.png" alt=""></a>
+      <div class="menu-toggle"></div>
+      <nav>
+          <ul>
+              <li><a href="#" class="active">Главная</a></li>
               <li>
-                <a href="build-home.html">Билды</a>
-                <ul class="submenu submenu-bilds">
-                  <li class="submenu-bilds-list"><a href="#">Билд для стамина нб</a></li>
-                  <li class="submenu-bilds-list"><a href="builds/sorc.html">Билд для мана сорка</a></li>
-                  <li class="submenu-bilds-list"><a href="#">Билд для ДК танка</a></li>
-                </ul>
+                  <a class="subindex" href="build-home.html">Билды</a>
+                  <ul class="submenu submenu-builds">
+                      <li class="submenu-builds-list"><a href="#">Стамина нб</a></li>
+                      <li class="submenu-builds-list"><a href="builds/sorc.html">Мана сорк</a></li>
+                      <li class="submenu-builds-list"><a href="#">ДК танк</a></li>
+                  </ul>
               </li>
               <li>
-                <a href="advice-home.html">Советы</a>
-                <ul class="submenu submenu-bilds">
-                  <li class="submenu-bilds-list"><a href="#">Совет по фарму опыта</a></li>
-                  <li class="submenu-bilds-list"><a href="#">Совет по фарму золота</a></li>
-                  <li class="submenu-bilds-list"><a href="#">Совет по набору очков способностей</a></li>
-                </ul>
+                  <a class="subindex" href="advice-home.html">Советы</a>
+                  <ul class="submenu submenu-advice">
+                      <li class="submenu-builds-list"><a href="#">Фарм опыта</a></li>
+                      <li class="submenu-builds-list"><a href="#">Фарм золота</a></li>
+                      <li class="submenu-builds-list"><a href="#">Набор очков способностей</a></li>
+                  </ul>
               </li>
-              <li><a href="aboutus.html">О нас</a></li>
+              <li><a href="#">О нас</a></li>
           </ul>
       </nav>
+      <div class="clearfix"></div>
+      </div>
   </header>
+
   <div class="wrapper">
     <main>
       <h1 class="name-page">The Elder Scrolls Online Guide</h1>
@@ -118,6 +126,15 @@
       </div>
     </footer>
   </div>
-  <script  src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('.menu-toggle').click(function () {
+              $('.menu-toggle').toggleClass('active');
+              $('nav').toggleClass('active')
+          })
+      })
+  </script>
   </body>
 </html>
