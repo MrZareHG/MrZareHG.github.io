@@ -1,8 +1,8 @@
 
 .container {
-  width: 1200px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(296px, 1fr));
   grid-gap: 15px;
   margin: 50px auto;
 }
@@ -11,7 +11,7 @@
 }
 .container .card {
   position: relative;
-  width: 296px;
+  max-width: 296px;
   height: 300px;
   margin: 0 auto;
   background: #333131;

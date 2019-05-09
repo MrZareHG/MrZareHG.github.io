@@ -1,16 +1,17 @@
 .content {
   width: 100%;
-  display: flex;
+  margin: auto;
+}
+.armor-item,
+.ability-item {
+  margin: auto;
+  text-align: center;
 }
 
 .main {
   display: block;
 }
 
-.ability-item,
-.armor-item {
-  width: 50%;
-}
 
 .ability-list>li>img {
   width: 80%;
@@ -31,16 +32,14 @@
 .ability-list>li:last-child {
   margin-left: 10px;
 }
-
-.ability-item>p,
-p.armor-item {
-  margin-left: 30px;
+.armor-item a {
+  color: #55c3de;
 }
 
 table {
   border: 1px solid #55c3de;
   font-size: 12px;
-  margin-right: 20px;
+  margin: auto;
 }
 
 a {

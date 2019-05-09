@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>ESO Guide</title>
-    <link  rel="stylesheet" href="css/style.css">
-    <link  rel="stylesheet" href="css/home.css">
+      <meta charset="utf-8">
+      <title>ESO Guide</title>
+      <link  rel="stylesheet" href="css/style.css">
+      <link  rel="stylesheet" href="css/home.css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body class="inner-page">
   <header>
@@ -17,20 +18,20 @@
                   <li>
                       <a class="subindex active" href="#">Билды</a>
                       <ul class="submenu submenu-builds">
-                          <li class="submenu-builds-list"><a href="#">Стамина нб</a></li>
+                          <li class="submenu-builds-list"><a href="builds/nb.html">Стамина нб</a></li>
                           <li class="submenu-builds-list"><a href="builds/sorc.html">Мана сорка</a></li>
-                          <li class="submenu-builds-list"><a href="#">Дк танка</a></li>
+                          <li class="submenu-builds-list"><a href="builds/dk.html">Дк танка</a></li>
                       </ul>
                   </li>
                   <li>
                       <a class="subindex" href="advice-home.html">Советы</a>
                       <ul class="submenu submenu-advice">
-                          <li class="submenu-builds-list"><a href="#">Фарм опыта</a></li>
-                          <li class="submenu-builds-list"><a href="#">Фарм золота</a></li>
-                          <li class="submenu-builds-list"><a href="#">Набор очков способностей</a></li>
+                          <li class="submenu-builds-list"><a href="advices/farm-xp.html">Фарм опыта</a></li>
+                          <li class="submenu-builds-list"><a href="advices/farm-gold.html">Фарм золота</a></li>
+                          <li class="submenu-builds-list"><a href="advices/farm-sp.html">Набор очков способностей</a></li>
                       </ul>
                   </li>
-                  <li><a href="#">О нас</a></li>
+                  <li><a href="aboutus.html">О нас</a></li>
               </ul>
           </nav>
           <div class="clearfix"></div>
@@ -40,7 +41,8 @@
     <main>
         <h1>Билды</h1>
         <div class="container">
-            <a href="builds/sorc.html"><div class="card">
+            <a href="builds/sorc.html">
+                <div class="card">
                 <div class="face face1">
                     <div class="content">
                         <img src="img/build-1.png" alt="">
@@ -50,7 +52,8 @@
                     <h2>Мана Сорк</h2>
                 </div>
             </div></a>
-            <a href="#"><div class="card">
+            <a href="#">
+                <div class="card">
                 <div class="face face1">
                     <div class="content">
                         <img src="img/build-2.png" alt="">
@@ -60,7 +63,8 @@
                     <h2>Стамина НБ</h2>
                 </div>
             </div></a>
-            <a href="#"><div class="card">
+            <a href="#">
+                <div class="card">
                 <div class="face face1">
                     <div class="content">
                         <img src="img/build-3.png" alt="">
@@ -89,6 +93,15 @@
           </ul>
       </div>
     </footer>
-  </div
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('.menu-toggle').click(function () {
+              $('.menu-toggle').toggleClass('active');
+              $('nav').toggleClass('active')
+          })
+      })
+  </script>
   </body>
 </html>
