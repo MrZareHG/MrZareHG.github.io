@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>ESO Guide</title>
+    <link  rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/builds.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
-
+<body class="inner-page">
+<header>
+    <div class="wrap">
+        <a href="../index.html" class="logo"><img src="../img/logo.png" alt=""></a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li>
+                    <a class="subindex" href="../build-home.html">Билды</a>
+                    <ul class="submenu submenu-builds">
+                        <li class="submenu-builds-list"><a href="../builds/nb.html">Стамина нб</a></li>
+                        <li class="submenu-builds-list"><a href="../builds/sorc.html">Мана сорк</a></li>
+                        <li class="submenu-builds-list"><a href="#">ДК танк</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="subindex active" href="../advice-home.html">Советы</a>
+                    <ul class="submenu submenu-advice">
+                        <li class="submenu-builds-list"><a href="../advices/farm-xp.html">Фарм опыта</a></li>
+                        <li class="submenu-builds-list"><a href="../advices/farm-gold.html">Фарм золота</a></li>
+                        <li class="submenu-builds-list"><a href="../advices/farm-sp.html">Набор очков способностей</a></li>
+                    </ul>
+                </li>
+                <li><a href="../aboutus.html">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+</header>
+<div class="wrapper">
+    <main>
+        <h1 class="name-page">Фарм голды</h1>
+        <ul>
+            <li><span>1 способ</span><p>Рыбалка. Нужно просто ловить рыбу, а затем очищать её, в надежде на выпадение "Превосходной икры", стоимость которой около 10 тысяч золота.</p></li>
+            <li><span>2 способ</span><p>Стандартный сбор ресурсов. Здесь можно пойти по пути 100% прибыли и продать сырое(не переработанное) сырьё или же переработать его в слитки и с маленьким шансом получить золотую заточку, которая стоит как весь стак необработанного сырья.</p></li>
+            <li><span>3 способ</span><p>Гринд мобов. Идёте в публичное подземелье, собираете мобов и выносите их. Золото и вещи собранные с них приносят от 30 тысяч золота, но нужно будет тратиться на починку снаряжения.</p></li>
+            <li><span>4 способ(DLC)</span><p>Вам нужно попасть в святилище "Рамимилк", которое находится на остроове Ввандерфел. Там будет находиться 7 NPC. Вам нужно убивать их, используя "Клинок Горя" из DLC "Тёмное Братство", собирать лут и продавать его скупшикам краденного.</p></li>
+            <li><span>5 способ(DLC)</span><p>Фарм Имперского города. Самый лучший способ, т.к даёт много золота, опыта, вещей, мотивов и специальной валюты "Камни Тельвар". Но есть одно условие, вам персонаж должен быть очень живучим, иначе вы можете потерять всё т.к это PVP локация и игроки, убив вас, заберут всё добро.</p></li>
+        </ul>
+    </main>
+    <footer>
+        <div class="footer-content social">
+            <h3>Мы в соц. сетях</h3>
+            <div class="social-container">
+                <a href="#">Мы в Вконтакте</a>
+                <a href="#">Мы в Facebook</a>
+            </div>
+        </div>
+        <div class="footer-content main-navigation footer-nav">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Билды</a></li>
+                <li><a href="#">Советы</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu-toggle').click(function () {
+            $('.menu-toggle').toggleClass('active');
+            $('nav').toggleClass('active')
+        })
+    })
+</script>
 </body>
 </html>

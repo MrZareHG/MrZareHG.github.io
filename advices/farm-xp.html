@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>ESO Guide</title>
+    <link  rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/builds.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
-
+<body class="inner-page">
+<header>
+    <div class="wrap">
+        <a href="../index.html" class="logo"><img src="../img/logo.png" alt=""></a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li>
+                    <a class="subindex" href="../build-home.html">Билды</a>
+                    <ul class="submenu submenu-builds">
+                        <li class="submenu-builds-list"><a href="../builds/nb.html">Стамина нб</a></li>
+                        <li class="submenu-builds-list"><a href="../builds/sorc.html">Мана сорк</a></li>
+                        <li class="submenu-builds-list"><a href="#">ДК танк</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="subindex active" href="../advice-home.html">Советы</a>
+                    <ul class="submenu submenu-advice">
+                        <li class="submenu-builds-list"><a href="../advices/farm-xp.html">Фарм опыта</a></li>
+                        <li class="submenu-builds-list"><a href="../advices/farm-gold.html">Фарм золота</a></li>
+                        <li class="submenu-builds-list"><a href="../advices/farm-sp.html">Набор очков способностей</a></li>
+                    </ul>
+                </li>
+                <li><a href="../aboutus.html">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+</header>
+<div class="wrapper">
+    <main>
+        <h1 class="name-page">Фарм XP</h1>
+        <ul>
+            <li><span>1 способ</span><p>Дольмены пустыни Аликр. Самый простой способ. Прибегаете в локацию, пишите в чат "+dolmen" и вам прилетает приглашение в группу. Нужно просто бегать с ребятами и закрывать якаря. Будет вам и опыт, и лут.</p></li>
+            <li><span>2 способ</span><p>Город Сентинель в пустыне Аликр. На побережь находится гринд спот с зомби. Идёте туда, собираете пачку мобов и выносите их. Этот способ быстрее чем с дольменами, но требует от игрока хила и AOE способностей.</p></li>
+            <li><span>3 способ(DLC)</span><p>Публичное подземелье "Забытые Пустоши" на острове "Ввандерфел". Отличный гринд спот т.к мобы уже стоят кучками, но големы,на которых вы будете порой натыкаться, замедляют процесс прокачки персонажей с мыленьким ДПС. Персонаж должен быть живучим, иметь хил и AOE скиллы. </p></li>
+            <li><span>4 способ</span><p>1 этаж "Катакомб Скайрича", считатся самым лучшим местом для фарма опыта. Груповой данж, мобы сильные и имеют много хп. Лучше всего воспользоваться помощью друга, который уже имеет большой дпс и может пробежать данж в соло.</p></li>
+            <li><span>5 способ</span><p>Батл Граунды. Если вам хочется повоевать с другими игроками, вам сюда. Опыта здесь сыплется не так много, зато качаются военные ветки. В них имеются скиллы, нужные большинству игроков.</p></li>
+        </ul>
+    </main>
+    <footer>
+        <div class="footer-content social">
+            <h3>Мы в соц. сетях</h3>
+            <div class="social-container">
+                <a href="#">Мы в Вконтакте</a>
+                <a href="#">Мы в Facebook</a>
+            </div>
+        </div>
+        <div class="footer-content main-navigation footer-nav">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Билды</a></li>
+                <li><a href="#">Советы</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu-toggle').click(function () {
+            $('.menu-toggle').toggleClass('active');
+            $('nav').toggleClass('active')
+        })
+    })
+</script>
 </body>
 </html>
