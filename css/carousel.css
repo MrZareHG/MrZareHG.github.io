@@ -45,8 +45,3 @@
   color: white;
   transition: ease-in-out 0.5s;
 }
-@media (max-width: 53.2em) {
-    .carousel-container {
-        width: 70%;
-    }
-}
