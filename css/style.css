@@ -1,4 +1,6 @@
-
+* {
+  font-size: 12pt;
+}
 /*Общее начало*/
 html {
   height: 100%
