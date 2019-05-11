@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ESO Guide</title>
     <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/carousel.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/media.css">
-  </head>
-  <body class="inner-page">
-  <header>
-      <div class="wrap">
-      <a href="#" class="logo"><img src="../MrZareHG.github.io/img/logo.png" alt=""></a>
-      <div class="menu-toggle"></div>
-      <nav>
-          <ul>
-              <li><a href="#" class="active">Главная</a></li>
-              <li>
-                  <a class="subindex" href="build-home.html">Билды</a>
-                  <ul class="submenu submenu-builds">
-                      <li class="submenu-builds-list"><a href="builds/nb.html">Стамина нб</a></li>
-                      <li class="submenu-builds-list"><a href="builds/sorc.html">Мана сорк</a></li>
-                      <li class="submenu-builds-list"><a href="builds/dk.html">ДК танк</a></li>
-                  </ul>
-              </li>
-              <li>
-                  <a class="subindex" href="advice-home.html">Советы</a>
-                  <ul class="submenu submenu-advice">
-                      <li class="submenu-builds-list"><a href="advices/farm-xp.html">Фарм опыта</a></li>
-                      <li class="submenu-builds-list"><a href="advices/farm-gold.html">Фарм золота</a></li>
-                      <li class="submenu-builds-list"><a href="advices/farm-sp.html">Набор очков способностей</a></li>
-                  </ul>
-              </li>
-          </ul>
-      </nav>
-      <div class="clearfix"></div>
-      </div>
-  </header>
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <div class="wrapper">
+</head>
+<body class="inner-page">
+<header>
+    <div class="wrap">
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Главная</a></li>
+                <li>
+                    <a class="subindex" href="build-home.html">Билды</a>
+                    <ul class="submenu submenu-builds">
+                        <li class="submenu-builds-list"><a href="builds/nb.html">Стамина нб</a></li>
+                        <li class="submenu-builds-list"><a href="builds/sorc.html">Мана сорк</a></li>
+                        <li class="submenu-builds-list"><a href="builds/dk.html">ДК танк</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="subindex" href="advice-home.html">Советы</a>
+                    <ul class="submenu submenu-advice">
+                        <li class="submenu-builds-list"><a href="advices/farm-xp.html">Фарм опыта</a></li>
+                        <li class="submenu-builds-list"><a href="advices/farm-gold.html">Фарм золота</a></li>
+                        <li class="submenu-builds-list"><a href="advices/farm-sp.html">Набор очков способностей</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+</header>
+
+<div class="wrapper">
     <main>
-      <h1 class="name-page">The Elder Scrolls Online Guide</h1>
+        <h1 class="name-page">The Elder Scrolls Online Guide</h1>
 
-      <div class="main">
-        <div class="content">
-          <h2>Новости из игры</h2>
-            <div class="carousel-container">
-                <i id="prevBtn" class="fas  fa-chevron-circle-left"></i>
-                <i id="nextBtn" class="fas fa-chevron-circle-right"></i>
-                <div class="carousel-slide">
-                        <img src="../MrZareHG.github.io/img/news-3.jpg" id="lastClone" alt="">
-                        <img src="../MrZareHG.github.io/img/news.jpg" alt="">
-                        <img src="../MrZareHG.github.io/img/news-2.jpg" alt="">
-                        <img src="../MrZareHG.github.io/img/news-3.jpg" alt="">
-                        <img src="../MrZareHG.github.io/img/news.jpg" id="firstClone" alt="">
+        <div class="main">
+            <div class="content">
+                <h2>Новости из игры</h2>
+                <div class="carousel-container">
+                    <i id="prevBtn" class="fas  fa-chevron-circle-left"></i>
+                    <i id="nextBtn" class="fas fa-chevron-circle-right"></i>
+                    <div class="carousel-slide">
+                        <img src="img/news-3.jpg" id="lastClone" alt="">
+                        <img src="img/news.jpg" alt="">
+                        <img src="img/news-2.jpg" alt="">
+                        <img src="img/news-3.jpg" alt="">
+                        <img src="img/news.jpg" id="firstClone" alt="">
+                    </div>
                 </div>
+                <section class="site-news">
+                    <h2>Новости сайта</h2>
+                    <ul>
+                        <li>Добавлен билд для стамина нб</li>
+                        <li>Добавлен билд для мана сорка</li>
+                        <li>Добавлен билд для ДК танка</li>
+                        <li>Добавлен совет по фарму опыта</li>
+                        <li>Добавлен совет по фарму золота</li>
+                        <li>Добавлен совет по набору очков способностей</li>
+                        <li>Сайт запустился</li>
+                    </ul>
+                </section>
             </div>
-          <section class="site-news">
-            <h2>Новости сайта</h2>
-            <ul>
-              <li>Добавлен билд для стамина нб</li>
-              <li>Добавлен билд для мана сорка</li>
-              <li>Добавлен билд для ДК танка</li>
-              <li>Добавлен совет по фарму опыта</li>
-              <li>Добавлен совет по фарму золота</li>
-              <li>Добавлен совет по набору очков способностей</li>
-              <li>Сайт запустился</li>
-            </ul>
-          </section>
+            <section class="boost content">
+                <h2>Заказ прокачки</h2>
+                <ul>
+                    <li>Прокачка до 50 уровня: Молоко с печеньками</li>
+                    <li>Прокачка до 100 ЧП: Молоко с печеньками</li>
+                    <li>Прокачка до 160 ЧП: Молоко с печеньками</li>
+                    <li>Фарм голды: Молоко с печеньками</li>
+                    <li>Продажа голды: Молоко с печеньками</li>
+                </ul>
+            </section>
         </div>
-          <section class="boost content">
-            <h2>Заказ прокачки</h2>
-            <ul>
-              <li>Прокачка до 50 уровня: Молоко с печеньками</li>
-              <li>Прокачка до 100 ЧП: Молоко с печеньками</li>
-              <li>Прокачка до 160 ЧП: Молоко с печеньками</li>
-              <li>Фарм голды: Молоко с печеньками</li>
-              <li>Продажа голды: Молоко с печеньками</li>
-            </ul>
-          </section>
-      </div>
         <h2>Как с нами связаться?</h2>
         <div class="contacts-container">
             <div class="box">
@@ -105,35 +108,44 @@
                 </div>
             </div>
         </div>
+        <div class="share">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>Google Plus</a></li>
+                <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i>VK</a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+            </ul>
+            <div class="toggle"></div>
+        </div>
 
     </main>
     <footer>
-      <div class="footer-content social">
-          <h3>Мы в соц. сетях</h3>
-          <div class="social-container">
-            <a href="#">Мы в Вконтакте</a>
-            <a href="#">Мы в Facebook</a>
-          </div>
-      </div>
-      <div class="footer-content main-navigation footer-nav">
-          <ul>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Билды</a></li>
-              <li><a href="#">Советы</a></li>
-              <li><a href="#">О нас</a></li>
-          </ul>
-      </div>
+        <div class="footer-wrap">
+            <p>© 2019 by MrZare® | All rights reserved.</p>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="build-home.html">Билды</a></li>
+                <li><a href="advice-home.html">Советы</a></li>
+            </ul>
+        </div>
     </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
-  <script type="text/javascript">
-      $(document).ready(function () {
-          $('.menu-toggle').click(function () {
-              $('.menu-toggle').toggleClass('active');
-              $('nav').toggleClass('active')
-          })
-      })
-  </script>
-  </body>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu-toggle').click(function () {
+            $('.menu-toggle').toggleClass('active');
+            $('nav').toggleClass('active')
+        })
+    });
+    $(document).ready(function () {
+        $('.toggle').click(function () {
+            $('.share').toggleClass('active')
+        })
+    })
+</script>
+</body>
 </html>
